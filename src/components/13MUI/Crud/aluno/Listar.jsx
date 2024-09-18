@@ -19,7 +19,7 @@ import axios from "axios";
 
 const Listar = () => {
   const [alunos, setAlunos] = useState([]);
-  const [isColored, setIsColored] = useState(false); // Estado para controlar a coloração
+  const [isColored, setIsColored] = useState(false); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const Listar = () => {
   }
 
   const handleColorToggle = () => {
-    setIsColored((prev) => !prev); // Alterna o estado para colorir ou descolorir as linhas
+    setIsColored((prev) => !prev); 
   };
 
   return (

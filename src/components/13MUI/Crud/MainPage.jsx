@@ -11,7 +11,7 @@ import CadastrarProfessor from "./professor/Cadastrar";
 import EditarAluno from "./aluno/Editar";
 import ListarAluno from "./aluno/Listar";
 import CadastrarAluno from "./aluno/Cadastrar";
-import Aprovados from "./aluno/Aprovados";
+import ListarPorCurso from "./aluno/ListarPorCurso";
 
 const MainPage = () => {
   return (
@@ -25,7 +25,7 @@ const MainPage = () => {
           <Route path="cadastrarAluno" element={<CadastrarAluno />} />
           <Route path="editarAluno/:id" element={<EditarAluno />} />
           <Route path="listarAluno" element={<ListarAluno />} />
-          <Route path="alunosAprovados" element={<Aprovados />}></Route>
+          <Route path="listarPorCurso" element={<ListarPorCurso />}></Route>
         </Routes>
       </Container>
     </BrowserRouter>

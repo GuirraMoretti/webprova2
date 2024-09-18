@@ -103,9 +103,9 @@ const MyMenu = () => {
           <MenuItem
             onClick={handleCloseAnchorElProfessor}
             component={Link}
-            to={"alunosAprovados"}
+            to={"listarPorCurso"}
           >
-            Listar aprovados
+            Listar por curso
           </MenuItem>
         </Menu>
       </Box>
