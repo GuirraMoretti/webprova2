@@ -76,7 +76,12 @@ const ListarPorCurso = () => {
             </TableHead>
             <TableBody>
               {alunosPorCurso[curso].map((aluno) => (
-                <TableRow key={aluno._id}>
+                <TableRow
+                key={aluno._id}
+                sx={{
+                  backgroundColor: aluno.ira >= 7 ? "lightgreen" : "inherit",
+                }}
+                >
                   <TableCell>{aluno._id}</TableCell>
                   <TableCell>{aluno.nome}</TableCell>
                   <TableCell>{aluno.curso}</TableCell>
